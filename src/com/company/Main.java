@@ -1,7 +1,9 @@
 package com.company;
 import java.util.*;
+//Rylee Charlton, 3/20/19, Exercise 10
 
 
+//og class contact
 class Contact{
     String name;
     String email;
@@ -17,6 +19,7 @@ class Contact{
 
 
 }
+//this is the collection class that is implementing from the contact class
 class Collection implements Iterable<Contact>{
     List<Contact> contacts = new ArrayList<>();
     @Override
@@ -40,7 +43,7 @@ class Main {
 	    Contact bob = new Contact("Bob", "bob@gmail.com");
 	    Contact arthur = new Contact("Arthur ","aneuman1@cscc.edu");
         Collection collection = new Collection();
-        collection.addContact(bob);
+        collection.addContact(bob);// pushing bob into the addContact method
         collection.addContact(arthur);
 
         collection.seeContact();
